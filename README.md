@@ -20,6 +20,8 @@ executor.onUpdate(((e) => {
 		console.log(e.output);
 	}
 });
+
+executor.run();
 ```
 
 See the documentation in `doc/`. See the files of [https://fishlanguage.com](https://github.com/Suppen/fishlanguage.com) for some more advanced usage
