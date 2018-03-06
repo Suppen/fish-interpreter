@@ -14,7 +14,7 @@ const source = `"hello, world"r\
 
 const executor = new FishExecutor(source);
 
-executor.onUpdate(((e) => {
+executor.onUpdate((e) => {
 	// `e` is the executor
 	if (e.hasTerminated) {
 		console.log(e.output);
