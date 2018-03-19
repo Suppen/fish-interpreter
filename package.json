@@ -1,14 +1,14 @@
 {
   "name": "fish-interpreter",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Interpreter for the ><> language",
   "main": "main.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Suppen/fish-interpreter"
+    "type": "git",
+    "url": "https://github.com/Suppen/fish-interpreter"
   },
   "author": "Suppen",
   "license": "ISC",

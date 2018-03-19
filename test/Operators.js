@@ -29,7 +29,8 @@ const testvalues = [
 	[-372, 8872],
 	[28, -32],
 	[-965, -2],
-	[42, 42]
+	[42, 42],
+	[5, 0]
 ];
 
 /********
@@ -101,7 +102,7 @@ describe("Math operators", function () {
 		it("should complain if the top element is 0", function () {
 			stack.push(5);
 			stack.push(0);
-			expect(() => Operators["m"](stack)).to.throw;
+			expect(() => Operators[","](stack)).to.throw;
 		});
 	});
 

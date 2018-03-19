@@ -64,6 +64,13 @@ lo~/
 /110
 /110
 `
+	},
+	{
+		initialStack: [],
+		input: [],
+		source:
+`05,n;`,
+		expectedOutput: "0"
 	}
 ];
 
