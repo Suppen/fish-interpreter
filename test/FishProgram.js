@@ -78,6 +78,13 @@ lo~/
 		source:
 `"Ā":*3ep3egn;`,
 		expectedOutput: "65536"
+	},
+	{
+		initialStack: [],
+		input: [],
+		source:
+`1&0[2&]&n;`,
+		expectedOutput: "1"
 	}
 ];
 
