@@ -181,6 +181,7 @@ describe("Manipulating a FishStack", function () {
 
 				expect(() => stack["@"]()).to.throw();
 
+				stack.push(a);
 				stack.push(b);
 
 				expect(stack.length).to.equal(2);
