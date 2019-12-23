@@ -79,7 +79,7 @@ describe("Manipulating a FishStack", function () {
 
 		it("should refuse to take non-numbers", function () {
 			invalidTestdata.forEach((thing) => {
-				expect(() => stack.push(thing)).to.throw;
+				expect(() => stack.push(thing)).to.throw();
 			});
 		});
 
@@ -100,7 +100,7 @@ describe("Manipulating a FishStack", function () {
 		});
 
 		it("should throw when trying to pop again", function () {
-			expect(() => stack.pop()).to.throw;
+			expect(() => stack.pop()).to.throw();
 		});
 	});
 
@@ -115,7 +115,7 @@ describe("Manipulating a FishStack", function () {
 
 		describe("Duplicating top element", function () {
 			it("should throw when trying to duplicate the top value of an empty stack", function () {
-				expect(() => stack[":"]()).to.throw;
+				expect(() => stack[":"]()).to.throw();
 			});
 
 			it("should duplicate the top value", function () {
@@ -131,7 +131,7 @@ describe("Manipulating a FishStack", function () {
 
 		describe("Removing top value", function () {
 			it("should throw when trying to remove the top value of an empty stack", function () {
-				expect(() => stack["~"]()).to.throw;
+				expect(() => stack["~"]()).to.throw();
 			});
 
 			it("should remove the top value", function () {
@@ -151,13 +151,13 @@ describe("Manipulating a FishStack", function () {
 
 		describe("Swapping top two elements", function () {
 			it("should throw when trying to swap the top two elements when stack size is less than two", function () {
-				expect(() => stack["$"]()).to.throw;
+				expect(() => stack["$"]()).to.throw();
 
 				stack.push(a);
 
 				expect(stack.length).to.equal(1);
 
-				expect(() => stack["$"]()).to.throw;
+				expect(() => stack["$"]()).to.throw();
 			});
 
 			it("should swap the top two elements when size is two or more", function () {
@@ -173,19 +173,19 @@ describe("Manipulating a FishStack", function () {
 
 		describe("Swapping top three elements", function () {
 			it("should throw when trying to swap the top three elements when stack size is less than three", function () {
-				expect(() => stack["@"]()).to.throw;
+				expect(() => stack["@"]()).to.throw();
 
 				stack.push(a);
 
 				expect(stack.length).to.equal(1);
 
-				expect(() => stack["@"]()).to.throw;
+				expect(() => stack["@"]()).to.throw();
 
 				stack.push(b);
 
 				expect(stack.length).to.equal(2);
 
-				expect(() => stack["@"]()).to.throw;
+				expect(() => stack["@"]()).to.throw();
 			});
 
 			it("should swap the top two elements when size is two or more", function () {
@@ -284,7 +284,7 @@ describe("Manipulating a FishStack", function () {
 			});
 
 			it("should throw when empty and called on an empty stack", function () {
-				expect(() => stack["&"]()).to.throw;
+				expect(() => stack["&"]()).to.throw();
 			});
 		});
 
@@ -292,13 +292,13 @@ describe("Manipulating a FishStack", function () {
 
 		describe("Creating a new stack", function() {
 			it("should throw when the current stack is empty", function () {
-				expect(() => stack["["]()).to.throw;
+				expect(() => stack["["]()).to.throw();
 			});
 
 			it("should throw when there are not enough elements in the current stack", function () {
 				stack.push(42);
 
-				expect(() => stack["["]()).to.throw;
+				expect(() => stack["["]()).to.throw();
 
 			});
 
