@@ -78,7 +78,7 @@ describe("Changing direction", function () {
 
 	it("should fail when given something else", function () {
 		[1, {}, [], -8, "Blah"].forEach((thing) => {
-			expect(() => ip.changeDirection(thing)).to.throw;
+			expect(() => ip.changeDirection(thing)).to.throw();
 		});
 	});
 });
@@ -109,7 +109,7 @@ describe("Moving an instruction pointer", function () {
 	describe("Teleporting outside the program grid", function () {
 		it("should throw in all cases", function () {
 			invalidTeleportPoints.forEach(([x, y]) => {
-				expect(() => ip.teleport(x, y)).to.throw;
+				expect(() => ip.teleport(x, y)).to.throw();
 			});
 		});
 	});

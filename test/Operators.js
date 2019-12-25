@@ -102,7 +102,7 @@ describe("Math operators", function () {
 		it("should complain if the top element is 0", function () {
 			stack.push(5);
 			stack.push(0);
-			expect(() => Operators[","](stack)).to.throw;
+			expect(() => Operators[","](stack)).to.throw();
 		});
 	});
 
@@ -120,7 +120,7 @@ describe("Math operators", function () {
 		it("should complain if the top element is 0", function () {
 			stack.push(5);
 			stack.push(0);
-			expect(() => Operators["%"](stack)).to.throw;
+			expect(() => Operators["%"](stack)).to.throw();
 		});
 	});
 

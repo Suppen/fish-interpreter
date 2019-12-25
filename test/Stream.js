@@ -63,7 +63,7 @@ describe("Reading from a stream", function () {
 	});
 
 	it("should throw when trying to read an empty stream", function () {
-		expect(() => stream.read()).to.throw;
+		expect(() => stream.read()).to.throw();
 	});
 });
 
