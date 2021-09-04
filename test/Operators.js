@@ -11,8 +11,8 @@ const { assert, expect, should} = require("chai");
  * Import test subjects *
  ************************/
 
-const Operators = require("../lib/Operators");
-const FishProgram = require("../lib/FishProgram");
+const Operators = require("../src/Operators");
+const FishProgram = require("../src/FishProgram");
 
 /***********
  * Helpers *
@@ -113,7 +113,7 @@ describe("Math operators", function () {
 				stack.push(x);
 				Operators["%"](stack);
 
-				expect(stack.pop()).to.equal(y % x);
+				expect(stack.pop()).to.equal((y % x + x) % x);
 			});
 		});
 

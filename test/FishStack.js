@@ -11,8 +11,8 @@ const { assert, expect, should} = require("chai");
  * Import test subjects *
  ************************/
 
-const FishProgram = require("../lib/FishProgram");
-const FishStack = require("../lib/FishStack");
+const FishProgram = require("../src/FishProgram");
+const FishStack = require("../src/FishStack");
 
 /***********
  * Helpers *

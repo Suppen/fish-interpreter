@@ -11,7 +11,7 @@ const { assert, expect, should} = require("chai");
  * Import test subjects *
  ************************/
 
-const Stream = require("../lib/Stream");
+const Stream = require("../src/Stream");
 
 /***********
  * Helpers *

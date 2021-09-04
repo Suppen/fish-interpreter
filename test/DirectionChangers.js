@@ -11,8 +11,8 @@ const { assert, expect, should} = require("chai");
  * Import test subjects *
  ************************/
 
-const DirectionChangers = require("../lib/DirectionChangers");
-const InstructionPointer = require("../lib/InstructionPointer");
+const DirectionChangers = require("../src/DirectionChangers");
+const InstructionPointer = require("../src/InstructionPointer");
 
 /***********
  * Helpers *
