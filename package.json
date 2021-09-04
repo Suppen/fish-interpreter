@@ -1,6 +1,6 @@
 {
   "name": "fish-interpreter",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "Interpreter for the ><> language",
   "main": "main.js",
   "scripts": {
