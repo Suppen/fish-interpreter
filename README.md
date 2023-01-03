@@ -9,7 +9,7 @@ Usage
 ```javascript
 const FishExecutor = require("fish-interpreter");
 
-const source = `"hello, world"r\
+const source = `"hello, world"rv
           o;!?l<`;
 
 const executor = new FishExecutor(source);
