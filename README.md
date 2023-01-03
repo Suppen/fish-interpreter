@@ -9,10 +9,12 @@ Usage
 ```javascript
 const FishExecutor = require("fish-interpreter");
 
-const source = `"hello, world"r\
+const source = `"hello, world"rv
           o;!?l<`;
 
 const executor = new FishExecutor(source);
+
+executor.intervalTime = 0;
 
 executor.onUpdate((e) => {
 	// `e` is the executor
