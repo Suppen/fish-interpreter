@@ -44,7 +44,7 @@ class FishProgram {
 		 */
 		this._grid = source
 		  .split(/\r\n?|\n/)
-		  .map((line) => line.split(""))
+		  .map((line) => [...line])
 		  .map((line) => line.map((c) => c.charCodeAt(0)));
 
 		// Make sure the grid is nice to play with
